@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="booking.css" />
+    <script src="booking.js"></script>
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <div id="brand">Apna | Cars</div>
+      <ul>
+        <li style="float: right"><a href="login.html">Logout</a></li>
+        <li style="float: right">
+          <a class="active" href="vehicles.html">Vehicles</a>
+        </li>
+        <li style="float: right"><a href="booking.html">Rent</a></li>
+        <li style="float: right">
+          <a href="home.html">Home</a>
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="flex-container formContainer vehiclesContainer">
+        <div class="gallery">
+          <div class="car-image-div">
+            <img src="images/Bugatti chiron.jfif" alt="Bugatti chiron" />
+          </div>
+          <div class="desc">
+            Bugatti Chiron
+            <div class="price">
+              <div>150 kms ₹ 8,000</div>
+              <div>4 seater</div>
+            </div>
+            <button type="button" class="button2" onclick="goToBooking()">
+              BOOK NOW
+            </button>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <div class="car-image-div">
+            <img src="images/Geneva.jfif" alt="Geneva" />
+          </div>
+          <div class="desc">
+            Geneva
+            <div class="price">
+              <div>150 kms ₹ 9,000</div>
+              <div>4 seater</div>
+            </div>
+            <button type="button" class="button2" onclick="goToBooking()">
+              BOOK NOW
+            </button>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <div class="car-image-div">
+            <img src="images/BMW.jfif" alt="BMW" />
+          </div>
+          <div class="desc">
+            BMW
+            <div class="price">
+              <div>150 kms ₹ 4,900</div>
+              <div>4 seater</div>
+            </div>
+            <button type="button" class="button2" onclick="goToBooking()">
+              BOOK NOW
+            </button>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <div class="car-image-div">
+            <img src="images/Mercedes.jpg" alt="Mercedes" />
+          </div>
+          <div class="desc">
+            Mercedes
+            <div class="price">
+              <div>150 kms ₹ 6,920</div>
+              <div>4 seater</div>
+            </div>
+            <button type="button" class="button2" onclick="goToBooking()">
+              BOOK NOW
+            </button>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <div class="car-image-div">
+            <img src="images/McLaren.png" alt="McLaren" />
+          </div>
+          <div class="desc">
+            McLaren
+            <div class="price">
+              <div>150 kms ₹ 5,870</div>
+              <div>2 seater</div>
+            </div>
+            <button type="button" class="button2" onclick="goToBooking()">
+              BOOK NOW
+            </button>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <div class="car-image-div">
+            <img src="images/ferrari.png" alt="Ferrari" />
+          </div>
+          <div class="desc">
+            Ferrari
+            <div class="price">
+              <div>150 kms ₹ 10,000</div>
+              <div>4 seater</div>
+            </div>
+            <button type="button" class="button2" onclick="goToBooking()">
+              BOOK NOW
+            </button>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <div class="car-image-div">
+            <img src="images/Honda jazz.jpg" alt="Honda jazz" />
+          </div>
+          <div class="desc">
+            Honda jazz
+            <div class="price">
+              <div>150 kms ₹ 3,280</div>
+              <div>4 seater</div>
+            </div>
+            <button type="button" class="button2" onclick="goToBooking()">
+              BOOK NOW
+            </button>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <div class="car-image-div">
+            <img src="data:image/jpeg;base64,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" alt="Jaguar" />
+          </div>
+          <div class="desc">
+            Jaguar
+            <div class="price">
+              <div>150 kms ₹ 4,531</div>
+              <div>4 seater</div>
+            </div>
+            <button type="button" class="button2" onclick="goToBooking()">
+              BOOK NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
